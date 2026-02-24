@@ -3,6 +3,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
 import RequireAuth from "./auth/RequireAuth.jsx";
+import TiposEnvase from "./pages/TiposEnvase.jsx";
+
 
 export default function App() {
   return (
@@ -14,6 +16,15 @@ export default function App() {
         element={
           <RequireAuth>
             <Home />
+          </RequireAuth>
+        }
+      />
+
+       <Route
+        path="/tipos-envase"
+        element={
+          <RequireAuth>
+            <TiposEnvase />
           </RequireAuth>
         }
       />

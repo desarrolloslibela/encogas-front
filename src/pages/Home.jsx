@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../auth/AuthContext.jsx";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const { me, logout } = useContext(AuthContext);
@@ -13,16 +14,22 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="card">
+      <div className="card mb-3">
         <div className="card-body">
           <div><b>Usuario:</b> {me?.email}</div>
           <div><b>Empresa:</b> {me?.empresaNombre} (ID {me?.empresaId})</div>
           <div><b>Roles:</b> {(me?.roles || []).join(", ")}</div>
           <hr />
-          <div className="text-muted">
-            Iteración 1: ABM Clientes + Tipos de Envase + Puntos Operativos + Stock base.
+          <div className="d-flex gap-2 flex-wrap">
+            <Link className="btn btn-primary btn-sm" to="/tipos-envase">
+              Tipos de envase
+            </Link>
           </div>
         </div>
+      </div>
+
+      <div className="text-muted">
+        Iteración 1: Tipos de Envase (este módulo) → luego Clientes, Puntos Operativos, Stock base.
       </div>
     </div>
   );
