@@ -4,6 +4,7 @@ import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
 import RequireAuth from "./auth/RequireAuth.jsx";
 import TiposEnvase from "./pages/TiposEnvase.jsx";
+import Clientes from "./pages/Clientes.jsx";
 
 
 export default function App() {
@@ -20,11 +21,19 @@ export default function App() {
         }
       />
 
-       <Route
+      <Route
         path="/tipos-envase"
         element={
           <RequireAuth>
             <TiposEnvase />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="/clientes"
+        element={
+          <RequireAuth>
+            <Clientes />
           </RequireAuth>
         }
       />
