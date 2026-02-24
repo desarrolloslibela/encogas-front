@@ -33,6 +33,9 @@ export default function Home() {
             <Link className="btn btn-primary btn-sm" to="/stock">
               Stock (puntos)
             </Link>
+            <Link className="btn btn-primary btn-sm" to="/vehiculos">
+              Vehículos
+            </Link>
           </div>
         </div>
       </div>

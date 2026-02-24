@@ -13,6 +13,7 @@ const TIPOS = [
   { value: "CASA_CENTRAL", label: "Casa Central" },
   { value: "PLANTA", label: "Planta" },
   { value: "DEPOSITO", label: "Depósito" },
+  { value: "VEHICULO", label: "Vehículo" },
   { value: "OTRO", label: "Otro" },
 ];
 

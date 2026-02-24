@@ -7,6 +7,7 @@ import TiposEnvase from "./pages/TiposEnvase.jsx";
 import Clientes from "./pages/Clientes.jsx";
 import PuntosOperativos from "./pages/PuntosOperativos.jsx";
 import StockEnvases from "./pages/StockEnvases.jsx";
+import Vehiculos from "./pages/Vehiculos.jsx";
 
 
 export default function App() {
@@ -52,6 +53,14 @@ export default function App() {
         element={
           <RequireAuth>
             <StockEnvases />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="/vehiculos"
+        element={
+          <RequireAuth>
+            <Vehiculos />
           </RequireAuth>
         }
       />
