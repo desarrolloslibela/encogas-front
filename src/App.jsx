@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import RequireAuth from "./auth/RequireAuth.jsx";
 import TiposEnvase from "./pages/TiposEnvase.jsx";
 import Clientes from "./pages/Clientes.jsx";
+import PuntosOperativos from "./pages/PuntosOperativos.jsx";
 
 
 export default function App() {
@@ -34,6 +35,14 @@ export default function App() {
         element={
           <RequireAuth>
             <Clientes />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="/puntos-operativos"
+        element={
+          <RequireAuth>
+            <PuntosOperativos />
           </RequireAuth>
         }
       />
