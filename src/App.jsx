@@ -6,6 +6,7 @@ import RequireAuth from "./auth/RequireAuth.jsx";
 import TiposEnvase from "./pages/TiposEnvase.jsx";
 import Clientes from "./pages/Clientes.jsx";
 import PuntosOperativos from "./pages/PuntosOperativos.jsx";
+import StockEnvases from "./pages/StockEnvases.jsx";
 
 
 export default function App() {
@@ -43,6 +44,14 @@ export default function App() {
         element={
           <RequireAuth>
             <PuntosOperativos />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="/stock"
+        element={
+          <RequireAuth>
+            <StockEnvases />
           </RequireAuth>
         }
       />

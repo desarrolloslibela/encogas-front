@@ -30,6 +30,9 @@ export default function Home() {
             <Link className="btn btn-primary btn-sm" to="/puntos-operativos">
               Puntos operativos
             </Link>
+            <Link className="btn btn-primary btn-sm" to="/stock">
+              Stock (puntos)
+            </Link>
           </div>
         </div>
       </div>
