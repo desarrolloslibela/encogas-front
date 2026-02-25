@@ -8,6 +8,7 @@ import Clientes from "./pages/Clientes.jsx";
 import PuntosOperativos from "./pages/PuntosOperativos.jsx";
 import StockEnvases from "./pages/StockEnvases.jsx";
 import Vehiculos from "./pages/Vehiculos.jsx";
+import Jornadas from "./pages/Jornadas.jsx";
 
 
 export default function App() {
@@ -64,6 +65,7 @@ export default function App() {
           </RequireAuth>
         }
       />
+      <Route path="/jornadas" element={<RequireAuth><Jornadas /></RequireAuth>} />
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

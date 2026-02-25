@@ -36,6 +36,9 @@ export default function Home() {
             <Link className="btn btn-primary btn-sm" to="/vehiculos">
               Vehículos
             </Link>
+            <Link className="btn btn-primary btn-sm" to="/jornadas">
+              Jornadas
+            </Link>
           </div>
         </div>
       </div>
