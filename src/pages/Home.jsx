@@ -39,6 +39,9 @@ export default function Home() {
             <Link className="btn btn-primary btn-sm" to="/jornadas">
               Jornadas
             </Link>
+            <Link className="btn btn-primary btn-sm" to="/ventas">
+              Ventas
+            </Link>
           </div>
         </div>
       </div>

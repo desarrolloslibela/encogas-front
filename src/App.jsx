@@ -9,6 +9,8 @@ import PuntosOperativos from "./pages/PuntosOperativos.jsx";
 import StockEnvases from "./pages/StockEnvases.jsx";
 import Vehiculos from "./pages/Vehiculos.jsx";
 import Jornadas from "./pages/Jornadas.jsx";
+import Ventas from "./pages/ventas/Ventas";
+
 
 
 export default function App() {
@@ -66,6 +68,7 @@ export default function App() {
         }
       />
       <Route path="/jornadas" element={<RequireAuth><Jornadas /></RequireAuth>} />
+      <Route path="/ventas" element={<RequireAuth><Ventas /></RequireAuth>} />
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
